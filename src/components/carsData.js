@@ -1,0 +1,28 @@
+const cars = [
+  { id: 1, year: 2026, make: "Maruti", model: "Ertiga", price: 1200000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Ertiga/10288/1755776579514/front-left-side-47.jpg" },
+  { id: 2, year: 2025, make: "Maruti", model: "Swift", price: 750000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/9226/1755777061785/front-left-side-47.jpg" },
+  { id: 3, year: 2024, make: "Maruti", model: "Baleno", price: 820000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Baleno/10492/1755851821713/front-left-side-47.jpg" },
+  { id: 4, year: 2026, make: "Hyundai", model: "Creta", price: 1550000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/8667/1755765115423/front-left-side-47.jpg" },
+  { id: 5, year: 2025, make: "Hyundai", model: "Venue", price: 1100000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Venue/12999/1771931633886/front-left-side-47.jpg" },
+  { id: 6, year: 2024, make: "Hyundai", model: "i20", price: 780000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/i20/11092/1755774177956/front-left-side-47.jpg" },
+  { id: 7, year: 2026, make: "Tata", model: "Nexon", price: 1250000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/11115/1779101151711/front-left-side-47.jpg" },
+  { id: 8, year: 2025, make: "Tata", model: "Punch", price: 900000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Punch/9623/1762425519212/front-left-side-47.jpg" },
+  { id: 9, year: 2024, make: "Tata", model: "Harrier", price: 1800000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Harrier/9368/1766125794560/front-left-side-47.jpg" },
+  { id: 10, year: 2023, make: "Mahindra", model: "Scorpio", price: 2100000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Scorpio-N/10818/1755775730308/front-left-side-47.jpg" },
+  { id: 11, year: 2022, make: "Mahindra", model: "XUV700", price: 1950000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV700/10794/1762509966753/front-left-side-47.jpg" },
+  { id: 12, year: 2023, make: "Mahindra", model: "Thar", price: 1650000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/12264/1776055307473/front-left-side-47.jpg" },
+  { id: 13, year: 2022, make: "Kia", model: "Seltos", price: 1400000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Seltos/13094/1778328978290/front-left-side-47.jpg" },
+  { id: 14, year: 2023, make: "Kia", model: "Sonet", price: 1050000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Sonet/9783/1755775200530/front-left-side-47.jpg" },
+  { id: 15, year: 2024, make: "Kia", model: "Carens", price: 1200000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/Carens/11623/1772787448187/front-left-side-47.jpg" },
+  { id: 16, year: 2022, make: "Toyota", model: "Innova", price: 2200000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/11703/1780562393141/front-left-side-47.jpg" },
+  { id: 17, year: 2025, make: "Toyota", model: "Fortuner", price: 3500000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/10904/1755846017683/front-left-side-47.jpg" },
+  { id: 18, year: 2023, make: "Toyota", model: "Glanza", price: 820000, image: "https://stimg.cardekho.com/images/car-images/360x240/Toyota/Glanza/10237/1779791458847/Gaming-Grey_373737.jpg?tr=w-360" },
+  { id: 19, year: 2026, make: "Honda", model: "City", price: 1500000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/City/13585/1779442198348/front-left-side-47.jpg" },
+  { id: 20, year: 2023, make: "Honda", model: "Amaze", price: 900000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Amaze-2nd-Gen/10519/1762413127692/front-left-side-47.jpg" },
+  { id: 21, year: 2024, make: "Honda", model: "Elevate", price: 1300000, image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Elevate/12099/1758802336858/front-left-side-47.jpg" },
+  { id: 22, year: 2026, make: "Skoda", model: "Slavia", price: 1450000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Slavia/11951/1779266772137/front-left-side-47.jpg" },
+  { id: 23, year: 2022, make: "Skoda", model: "Kushaq", price: 1400000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kushaq/11795/1755846330947/front-left-side-47.jpg" },
+  { id: 24, year: 2024, make: "Volkswagen", model: "Virtus", price: 1500000, image: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Volkswagen/Virtus/10617/1755846730435/front-left-side-47.jpg" },
+];
+
+export default cars;
