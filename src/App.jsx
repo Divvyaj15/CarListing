@@ -2,7 +2,7 @@ import cars from './components/carsData';
 import CarCard from './components/CarCard';
 import { useState } from 'react';
 import Filter from './components/Filter';
-import './App.css';
+import './app.css';
 
 function App() {
   const [selectedYear, setSelectedYear] = useState('');
